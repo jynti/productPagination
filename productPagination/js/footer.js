@@ -29,7 +29,7 @@ Footer.prototype.createButtons = function(){
 }
 
 Footer.prototype.onButtonClick = function(buttonNumber){
-  var start = buttonNumber  * (+this.selectedPagination);
+  var start = buttonNumber * (+this.selectedPagination);
   var end = start + (+this.selectedPagination) - 1;
   this.highlightButton(buttonNumber);
   Product.show(start, end, this.visibleProducts, this.productContentArea);
