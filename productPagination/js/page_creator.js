@@ -45,13 +45,6 @@ ProductPageCreator.prototype.createSideFilter = function(){
   var soldFilter = new Filter("available", this.allProducts, domDetails);
   soldFilter.init();
 
-  //   var optionValues = {
-  //   "20": "all",
-  //   "3":"3",
-  //   "6":"6",
-  //   "9":"9"
-  // }
-
   var optionValues = [["20", "all"], ["3","3"], ["6","6"], ["9","9"]];
 
   var pageSelectBox = new SelectBox("pagination", optionValues, domDetails);
